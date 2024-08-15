@@ -1,6 +1,7 @@
 ---
   permalink: /artifact-two/
   title: "Artifact Two - OpenGL Kitchen Render"
+  layout: single
 ---
 
 - [Original Artifact Two Code](https://github.com/mlineselle/CS-330-Comp-Graphic-and-Visualization.git)
