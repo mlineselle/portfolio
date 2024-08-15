@@ -329,3 +329,5 @@ defaults:
       type: pages
     values: single
     author_profile: true
+
+include: ["_pages"]
