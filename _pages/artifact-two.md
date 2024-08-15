@@ -5,7 +5,7 @@
 ---
 
 <video width="560" height="315" controls muted>
-  <source src="https://github.com/mlineselle/portfolio/raw/main/assets/videos/ArtifactTwoVideo.mp4" type="video/mp4">
+  <source src="https://github.com/mlineselle/portfolio/raw/master/assets/videos/ArtifactTwoVideo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
