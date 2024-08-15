@@ -1,6 +1,7 @@
 ---
   permalink: /artifact-one/
   title: "Artifact One - TI Board Thermometer"
+  layout: single
 ---
 
 - [Original Artifact One Code](https://github.com/mlineselle/CS-350-H7050-Emerging-Sys-Arch-Tech.git)
