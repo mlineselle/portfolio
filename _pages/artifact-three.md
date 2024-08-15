@@ -6,12 +6,12 @@ layout: single
 
 ### Original Artifact Three Dog Shelter Website Video
 <video width="560" height="315" controls>
-  <source src="/assets/videos/Artifact3Video.mp4" type="video/mp4">
+  <source src="https://github.com/mlineselle/portfolio/raw/main/assets/videos/Artifact3Video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 ### New React website with sample database hosted on MongoDB Atlas
-<img src="/assets/images/EnhancedWebsite.PNG" alt="Enhanced Website Image" width="560" height="315">
+<img src="https://github.com/mlineselle/portfolio/raw/main/assets/images/EnhancedWebsite.PNG" alt="Enhanced Website Image" width="560" height="315">
 
 ### Narrative for Artifact Three
 This artifact is a website that displays data from a dog shelter along with a pie chart and a geolocation map with pins. It runs off of a python file to deal with CRUD operations connected to a mongoDB database, along with a jupyter file that runs the frontend website. This item displays an ability to develop not only the front end of a website but also handle the backend with a secure database. This displays my specific abilities of full stack development of websites which is something I want to go into. I improved the artifact by moving it into a more used React website with javascript. 
