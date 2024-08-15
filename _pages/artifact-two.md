@@ -3,7 +3,6 @@
   title: "Artifact Two - OpenGL Kitchen Render"
 ---
 
-## Artifact Two - OpenGL Kitchen Render
 - [Original Artifact Two Code](https://github.com/mlineselle/CS-330-Comp-Graphic-and-Visualization.git)
 - [Enhanced Artifact Two Code](https://github.com/mlineselle/ArtifactTwoEnhancement.git)
 
