@@ -364,7 +364,7 @@ std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
 
 #### Enhanced Code
 
-<pre style="font-size: 12px;><code>  
+<pre style="font-size: 12px;"><code>  
   
 void addVertex(std::vector<GLfloat>& squareVerts, GLfloat x, GLfloat y, GLfloat z, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat tx, GLfloat ty) {
     squareVerts.push_back(x);
