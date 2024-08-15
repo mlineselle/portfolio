@@ -8,6 +8,12 @@ layout: single
   <source src="https://github.com/mlineselle/portfolio/raw/master/assets/videos/Artifact3Video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+## Original Artifact Three Dog Shelter Website
+
+<img src="https://github.com/mlineselle/portfolio/raw/main/assets/images/EnhancedWebsite.jpg" alt="Alt text" width="560" height="315">
+## New React website with sample database hosted on MongoDB Atlas
+
+
 
 - [Original Artifact Three Code](https://github.com/mlineselle/CS-340-Client-Development.git)
 - [Enhanced Artifact Three Code](https://github.com/mlineselle/ArtifactThreeEnhancement.git)
