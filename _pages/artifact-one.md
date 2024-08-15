@@ -3,7 +3,6 @@
   title: "Artifact One - TI Board Thermometer"
 ---
 
-## Artifact One - TI Board Thermometer
 - [Original Artifact One Code](https://github.com/mlineselle/CS-350-H7050-Emerging-Sys-Arch-Tech.git)
 - [Enhanced Artifact One Code](https://github.com/mlineselle/ArtifactOneEnhancement.git)
 
