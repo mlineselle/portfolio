@@ -10,7 +10,358 @@
 </video>
 
 ### Changes in Data Structures and Algorithms
+One of the big changes was cleaning up the original buildCubeBases function and making it cleaner as well as using data structures to store more values.
 
+#### Original Code
+```
+/ Build Cube Bases
+std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat height, GLfloat width, GLfloat length, GLfloat leftTextureXStart, GLfloat leftTextureXStop, GLfloat leftTextureYStart, GLfloat leftTextureYStop, GLfloat rightTextureXStart, GLfloat rightTextureXStop, GLfloat rightTextureYStart, GLfloat rightTextureYStop, GLfloat frontTextureXStart, GLfloat frontTextureXStop, GLfloat frontTextureYStart, GLfloat frontTextureYStop, GLfloat backTextureXStart, GLfloat backTextureXStop, GLfloat backTextureYStart, GLfloat backTextureYStop, GLfloat topTextureXStart, GLfloat topTextureXStop, GLfloat topTextureYStart, GLfloat topTextureYStop, GLfloat bottomTextureXStart, GLfloat bottomTextureXStop, GLfloat bottomTextureYStart, GLfloat bottomTextureYStop) {
+
+    // Initialize vector for base vertices
+    std::vector<GLfloat> squareVerts;
+
+    // Top Square
+        // Top left Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(1.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(topTextureXStart);
+            squareVerts.push_back(topTextureYStop);
+
+
+        // Top Right Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(1.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(topTextureXStop);
+            squareVerts.push_back(topTextureYStop);
+
+
+        // Bottom Left Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(1.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(topTextureXStart);
+            squareVerts.push_back(topTextureYStart);
+
+
+        // Bottom Right Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(1.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(topTextureXStop);
+            squareVerts.push_back(topTextureYStart);
+
+    // Front Square
+        // Top left Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(frontTextureXStart);
+            squareVerts.push_back(frontTextureYStop);
+
+
+        // Top Right Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(frontTextureXStop);
+            squareVerts.push_back(frontTextureYStop);
+
+
+        // Bottom Left Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(frontTextureXStart);
+            squareVerts.push_back(frontTextureYStart);
+
+
+        // Bottom Right Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(frontTextureXStop);
+            squareVerts.push_back(frontTextureYStart);
+
+    // Left Square
+        // Top left Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(-1.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(leftTextureXStart);
+            squareVerts.push_back(leftTextureYStop);
+
+
+        // Top Right Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(-1.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(leftTextureXStop);
+            squareVerts.push_back(leftTextureYStop);
+
+
+          // Bottom Left Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(-1.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(leftTextureXStart);
+            squareVerts.push_back(leftTextureYStart);
+
+
+        // Bottom Right Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(-1.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(leftTextureXStop);
+            squareVerts.push_back(leftTextureYStart);
+
+
+    // Right Square
+        // Top left Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(1.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(rightTextureXStart);
+            squareVerts.push_back(rightTextureYStop);
+
+
+        // Top Right Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(1.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(rightTextureXStop);
+            squareVerts.push_back(rightTextureYStop);
+
+
+        // Bottom Left Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(1.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(rightTextureXStart);
+            squareVerts.push_back(rightTextureYStart);
+
+
+        // Bottom Right Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(1.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(rightTextureXStop);
+            squareVerts.push_back(rightTextureYStart);
+
+    // Back Square
+        // Top left Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(-1.0);
+            // Texture Coordinates
+            squareVerts.push_back(backTextureXStart);
+            squareVerts.push_back(backTextureYStop);
+
+
+        // Top Right Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z + height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(-1.0);
+            // Texture Coordinates
+            squareVerts.push_back(backTextureXStop);
+            squareVerts.push_back(backTextureYStop);
+
+
+        // Bottom Left Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(-1.0);
+            // Texture Coordinates
+            squareVerts.push_back(backTextureXStart);
+            squareVerts.push_back(backTextureYStart);
+
+
+        // Bottom Right Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(-1.0);
+            // Texture Coordinates
+            squareVerts.push_back(backTextureXStop);
+            squareVerts.push_back(backTextureYStart);
+
+    // Bottom Square
+        // Top left Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(-1.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(bottomTextureXStart);
+            squareVerts.push_back(bottomTextureYStart);
+
+
+        // Top Right Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y + length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(-1.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(bottomTextureXStop);
+            squareVerts.push_back(bottomTextureYStart);
+
+
+        // Bottom Left Vertex
+            // Coordinates
+            squareVerts.push_back(x - width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(-1.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(bottomTextureXStop);
+            squareVerts.push_back(bottomTextureYStart);
+
+
+        // Bottom Right Vertex
+            // Coordinates
+            squareVerts.push_back(x + width / 2);
+            squareVerts.push_back(y - length / 2);
+            squareVerts.push_back(z - height / 2);
+            //Normal Vector Coordinates
+            squareVerts.push_back(0.0);
+            squareVerts.push_back(-1.0);
+            squareVerts.push_back(0.0);
+            // Texture Coordinates
+            squareVerts.push_back(bottomTextureXStart);
+            squareVerts.push_back(bottomTextureYStart);
+
+    return squareVerts;
+}
+```
+
+#### Enhanced Code
 ```
 void addVertex(std::vector<GLfloat>& squareVerts, GLfloat x, GLfloat y, GLfloat z, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat tx, GLfloat ty) {
     squareVerts.push_back(x);
@@ -70,35 +421,6 @@ std::vector<GLfloat> buildCubeBases(const CubeDimensions& dim,
     addVertex(squareVerts, dim.x + dim.width / 2, dim.y - dim.length / 2, dim.z - dim.height / 2, 0.0, -1.0, 0.0, bottomTex.xStop, bottomTex.yStop);
 
     return squareVerts;
-}
-
-// Create cube indices for all triangles
-
-std::vector<GLushort> createCubeIndices() {
-    // Initialize vector for cube indices
-    std::vector<GLushort> cubeIndices;
-
-    // Define the base indices for the cube faces
-    std::array<std::array<GLushort, 4>, 6> faceIndices = { {
-        {0, 1, 2, 3},  // Top face
-        {21, 20, 22, 23},  // Bottom face
-        {16, 17, 18, 19},  // Back face
-        {12, 13, 14, 15},  // Right face
-        {4, 5, 6, 7},  // Front face
-        {8, 9, 10, 11}  // Left face
-    } };
-
-    // Loop through each face to add the indices
-    for (const auto& face : faceIndices) {
-        cubeIndices.push_back(face[0]);
-        cubeIndices.push_back(face[1]);
-        cubeIndices.push_back(face[2]);
-        cubeIndices.push_back(face[1]);
-        cubeIndices.push_back(face[3]);
-        cubeIndices.push_back(face[2]);
-    }
-
-    return cubeIndices;
 }
 ```
 
