@@ -162,7 +162,7 @@ footer:
 
 
 # Reading Files
-include:
+include: ["_pages"]
   - .htaccess
   - _pages
 exclude:
@@ -330,4 +330,3 @@ defaults:
     values: single
     author_profile: true
 
-include: ["_pages"]
