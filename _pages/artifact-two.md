@@ -1,7 +1,7 @@
 ---
   permalink: /artifact-two/
   title: "Artifact Two - OpenGL Kitchen Render"
-  layout: default
+  layout: single
 ---
 
 <video width="560" height="315" controls muted>
