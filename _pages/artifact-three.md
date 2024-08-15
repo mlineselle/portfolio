@@ -1,6 +1,7 @@
 ---
 permalink: /artifact-three/
 title: "Artifact Three - Dog Shelter Website and Database"
+layout: single
 ---
 
 - [Original Artifact Three Code](https://github.com/mlineselle/CS-340-Client-Development.git)
