@@ -1,4 +1,5 @@
 ---
+  layout: single
   permalink: /code-review/
   title: "Informal Code Review"
 ---
