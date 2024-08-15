@@ -13,9 +13,8 @@
 One of the big changes was cleaning up the original buildCubeBases function and making it cleaner as well as using data structures to store more values.
 
 #### Original Code
-<div style="font-size: 9px;">
-<pre><code>
-  
+
+<pre style="font-size: 12px;><code>  
   // Build Cube Bases
   std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat height, GLfloat width, GLfloat length, GLfloat leftTextureXStart, GLfloat leftTextureXStop, GLfloat leftTextureYStart, GLfloat leftTextureYStop, GLfloat rightTextureXStart, GLfloat rightTextureXStop, GLfloat rightTextureYStart,   GLfloat rightTextureYStop, GLfloat frontTextureXStart, GLfloat frontTextureXStop, GLfloat frontTextureYStart, GLfloat frontTextureYStop, GLfloat backTextureXStart, GLfloat backTextureXStop, GLfloat backTextureYStart, GLfloat backTextureYStop, GLfloat topTextureXStart, GLfloat topTextureXStop, GLfloat topTextureYStart, GLfloat topTextureYStop, GLfloat bottomTextureXStart, GLfloat bottomTextureXStop, GLfloat bottomTextureYStart, GLfloat bottomTextureYStop) {
 
@@ -362,12 +361,10 @@ One of the big changes was cleaning up the original buildCubeBases function and 
       return squareVerts;
   }
   </code></pre>
-</div>
 
 #### Enhanced Code
 
-<div style="font-size: 9px;">
-  <pre><code>
+<pre style="font-size: 12px;><code>  
   
 void addVertex(std::vector<GLfloat>& squareVerts, GLfloat x, GLfloat y, GLfloat z, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat tx, GLfloat ty) {
     squareVerts.push_back(x);
@@ -428,8 +425,7 @@ std::vector<GLfloat> buildCubeBases(const CubeDimensions& dim,
 
     return squareVerts;
 }
-  </code></pre>
-</div>
+</code></pre>
 
 ### Narrative for Artifact Two
 This artifact is a rendered 3D scene written in C++ with OpenGL. I wrote a file that does all the work for creating vertices and then rendering them into a 3D space. This scene includes objects of various shapes and sizes as well as individually textured and the scene has lighting. This artifact displays my ability to understand the functionality behind modern technology and that I can learn new skills and languages quickly. OpenGL has many higher level languages and programs that never make you go into such detail for rendering. This shows that I have a grasp at languages at their base forms, meaning I should be able to use that knowledge and create more efficient code. There are many algorithms that were used for creating the vertices of all the objects in the scene and mapping the textures and dealing with lighting. 
