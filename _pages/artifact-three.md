@@ -10,7 +10,7 @@ layout: single
 </video>
 ## Original Artifact Three Dog Shelter Website
 
-<img src="https://github.com/mlineselle/portfolio/raw/main/assets/images/EnhancedWebsite.jpg" alt="Alt text" width="560" height="315">
+<img src="https://github.com/mlineselle/portfolio/raw/main/assets/images/EnhancedWebsite.PNG" alt="Alt text" width="560" height="315">
 ## New React website with sample database hosted on MongoDB Atlas
 
 
