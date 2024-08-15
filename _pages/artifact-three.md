@@ -4,6 +4,11 @@ title: "Artifact Three - Dog Shelter Website and Database"
 layout: single
 ---
 
+<video width="560" height="315" controls>
+  <source src="https://github.com/mlineselle/portfolio/assets/videos/Artifact3Video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 - [Original Artifact Three Code](https://github.com/mlineselle/CS-340-Client-Development.git)
 - [Enhanced Artifact Three Code](https://github.com/mlineselle/ArtifactThreeEnhancement.git)
 
