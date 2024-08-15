@@ -1,7 +1,6 @@
 ---
   permalink: /artifact-two/
   title: "Artifact Two - OpenGL Kitchen Render"
-  layout: single
 ---
 
 <video width="560" height="315" controls muted>
@@ -363,6 +362,7 @@ std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
     return squareVerts;
 }
 ```
+
 </details>
 
 
