@@ -1,10 +1,10 @@
 # main links
 main:
-   - title: "Introduction"
-     url: /introduction/
-   - title: "Sample Posts"
-     url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Code Review"
+    url: /code-review/
+  - title: "Artifact One"
+    url: /artifact-one/
+  - title: "Artifact Two"
+    url: /artifact-two/
+  - title: "Artifact Three"
+    url: /artifact-three/
