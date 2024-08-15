@@ -4,13 +4,13 @@ title: "Artifact Three - Dog Shelter Website and Database"
 layout: single
 ---
 
-## Original Artifact Three Dog Shelter Website Video
+### Original Artifact Three Dog Shelter Website Video
 <video width="560" height="315" controls>
   <source src="https://github.com/mlineselle/portfolio/raw/master/assets/videos/Artifact3Video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-## New React website with sample database hosted on MongoDB Atlas
+### New React website with sample database hosted on MongoDB Atlas
 <img src="https://github.com/mlineselle/portfolio/raw/master/assets/images/EnhancedWebsite.PNG" alt="Enhanced Website Image" width="560" height="315">
 
 ### Narrative for Artifact Three
