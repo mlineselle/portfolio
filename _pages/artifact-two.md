@@ -1,6 +1,7 @@
 ---
   permalink: /artifact-two/
   title: "Artifact Two - OpenGL Kitchen Render"
+  layout: single
 ---
 
 <video width="560" height="315" controls muted>
@@ -12,10 +13,11 @@
 One of the big changes was cleaning up the original buildCubeBases function and making it cleaner as well as using data structures to store more values.
 
 #### Original Code
-
-```
-// Build Cube Bases
-std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat height, GLfloat width, GLfloat length, GLfloat leftTextureXStart, GLfloat leftTextureXStop, GLfloat leftTextureYStart, GLfloat leftTextureYStop, GLfloat rightTextureXStart, GLfloat rightTextureXStop, GLfloat rightTextureYStart, GLfloat rightTextureYStop, GLfloat frontTextureXStart, GLfloat frontTextureXStop, GLfloat frontTextureYStart, GLfloat frontTextureYStop, GLfloat backTextureXStart, GLfloat backTextureXStop, GLfloat backTextureYStart, GLfloat backTextureYStop, GLfloat topTextureXStart, GLfloat topTextureXStop, GLfloat topTextureYStart, GLfloat topTextureYStop, GLfloat bottomTextureXStart, GLfloat bottomTextureXStop, GLfloat bottomTextureYStart, GLfloat bottomTextureYStop) {
+<div style="font-size: 12px;">
+<pre><code>
+  
+  // Build Cube Bases
+  std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat height, GLfloat width, GLfloat length, GLfloat leftTextureXStart, GLfloat leftTextureXStop, GLfloat leftTextureYStart, GLfloat leftTextureYStop, GLfloat rightTextureXStart, GLfloat rightTextureXStop, GLfloat rightTextureYStart,   GLfloat rightTextureYStop, GLfloat frontTextureXStart, GLfloat frontTextureXStop, GLfloat frontTextureYStart, GLfloat frontTextureYStop, GLfloat backTextureXStart, GLfloat backTextureXStop, GLfloat backTextureYStart, GLfloat backTextureYStop, GLfloat topTextureXStart, GLfloat topTextureXStop, GLfloat topTextureYStart, GLfloat topTextureYStop, GLfloat bottomTextureXStart, GLfloat bottomTextureXStop, GLfloat bottomTextureYStart, GLfloat bottomTextureYStop) {
 
     // Initialize vector for base vertices
     std::vector<GLfloat> squareVerts;
@@ -357,9 +359,10 @@ std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
             squareVerts.push_back(bottomTextureXStart);
             squareVerts.push_back(bottomTextureYStart);
 
-    return squareVerts;
-}
-```
+      return squareVerts;
+  }
+  </code></pre>
+</div>
 
 #### Enhanced Code
 
