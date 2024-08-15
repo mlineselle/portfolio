@@ -3,8 +3,6 @@ permalink: /artifact-three/
 title: "Artifact Three - Dog Shelter Website and Database"
 ---
 
-
-## Artifact Three - Dog Shelter Website and Database
 - [Original Artifact Three Code](https://github.com/mlineselle/CS-340-Client-Development.git)
 - [Enhanced Artifact Three Code](https://github.com/mlineselle/ArtifactThreeEnhancement.git)
 
