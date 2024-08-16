@@ -10,7 +10,7 @@
 </video>
 
 ### Changes in Data Structures and Algorithms
-One of the big changes was cleaning up the original buildCubeBases function and making it cleaner as well as using data structures to store more values.
+One of the big changes was cleaning up the original buildCubeBases function and making it cleaner as well as using data structures to store more values such as parameters for the building functions.
 
 #### Original Code
 
@@ -370,6 +370,7 @@ std::vector(GLfloat) buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
 #### Enhanced Code
 
 <details>
+<summary>Click to expand!</summary>
 <pre style="font-size: 9px;">
 <code>  
   
