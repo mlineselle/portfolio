@@ -14,7 +14,8 @@ One of the big changes was cleaning up the original buildCubeBases function and 
 
 #### Original Code
 
-<detail>
+<details>
+<summary>Click to expand!</summary>
 <pre style="font-size: 9px;">
 <code>  
 // Build Cube Bases
@@ -364,7 +365,7 @@ std::vector(GLfloat) buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
   }
   </code>
   </pre>
-  </detail>
+  </details>
 
 #### Enhanced Code
 
