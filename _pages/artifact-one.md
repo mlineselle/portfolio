@@ -8,7 +8,7 @@
 ### Original Code
 Included a simple main function that used timers to trigger different functions and tasks while the thermostat program was working.
 
-<pre style="width: 600px; overflow-x: auto;">
+<pre style="width: 2000px; overflow-x: auto;">
 <code>
 void *mainThread(void *arg0)
 {
@@ -95,7 +95,8 @@ void *mainThread(void *arg0)
 ### Enhanced Code
 I added utilization of wifi chip, and sending data to an https server to store for later. As well as simple PID structure to enhance reliability
 
-```
+<pre style="width: 2000px; overflow-x: auto;">
+<code>
 /* Function to Initialize the on Board wifi to connect to the data webpage */
 void initWiFi() {
     SlNetCfgIpV4Args_t ipV4;
@@ -159,7 +160,8 @@ void sendData(int temperature, int setpoint, int heat, int seconds) {
     HTTPClient_disconnect(httpClient);
     HTTPClient_destroy(httpClient);
 }
-```
+</code>
+</pre>
 
 ### Narrative for Artifact One
 This artifact is an embedded C program that runs an example thermostat on a TI Launchpad CC3220S. It runs using a timer that was created, and using the build in functionality of the board with UART2 and I2C, along with a temperature sensor and buttons, it detects the current temperature and will activate the heat if it is too cold. I chose this artifact as it was one of the few programs that interacted with a physical object and went through the board. This is a crucial skill for several fields of software engineering, and may be something I wish to pursue. I want to showcase how I can learn to design software that runs on hardware and can accomplish tasks in the physical world, as well as being able to debug and fix this code. 
