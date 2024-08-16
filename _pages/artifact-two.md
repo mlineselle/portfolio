@@ -369,6 +369,7 @@ std::vector(GLfloat) buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
 
 #### Enhanced Code
 
+<details>
 <pre style="font-size: 9px;">
 <code>  
   
@@ -434,6 +435,7 @@ std::vector(GLfloat) buildCubeBases(const CubeDimensions& dim,
 
 </code>
 </pre>
+</details>
 
 
 ### Narrative for Artifact Two
