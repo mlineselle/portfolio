@@ -14,6 +14,7 @@ One of the big changes was cleaning up the original buildCubeBases function and 
 
 #### Original Code
 
+<detail>
 <pre style="font-size: 9px;">
 <code>  
 // Build Cube Bases
@@ -363,10 +364,12 @@ std::vector(GLfloat) buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
   }
   </code>
   </pre>
+  </detail>
 
 #### Enhanced Code
 
-
+<pre style="font-size: 9px;">
+<code>  
   
 void addVertex(std::vector(GLfloat)& squareVerts, GLfloat x, GLfloat y, GLfloat z, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat tx, GLfloat ty) {
     squareVerts.push_back(x);
@@ -427,6 +430,9 @@ std::vector(GLfloat) buildCubeBases(const CubeDimensions& dim,
 
     return squareVerts;
 }
+
+</code>
+</pre>
 
 
 ### Narrative for Artifact Two
