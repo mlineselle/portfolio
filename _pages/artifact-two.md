@@ -17,10 +17,10 @@ One of the big changes was cleaning up the original buildCubeBases function and 
 <pre style="font-size: 9px;">
 <code>  
 // Build Cube Bases
-std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat height, GLfloat width, GLfloat length, GLfloat leftTextureXStart, GLfloat leftTextureXStop, GLfloat leftTextureYStart, GLfloat leftTextureYStop, GLfloat rightTextureXStart, GLfloat rightTextureXStop, GLfloat rightTextureYStart,   GLfloat rightTextureYStop, GLfloat frontTextureXStart, GLfloat frontTextureXStop, GLfloat frontTextureYStart, GLfloat frontTextureYStop, GLfloat backTextureXStart, GLfloat backTextureXStop, GLfloat backTextureYStart, GLfloat backTextureYStop, GLfloat topTextureXStart, GLfloat topTextureXStop, GLfloat topTextureYStart, GLfloat topTextureYStop, GLfloat bottomTextureXStart, GLfloat bottomTextureXStop, GLfloat bottomTextureYStart, GLfloat bottomTextureYStop) {
+std::vector(GLfloat) buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat height, GLfloat width, GLfloat length, GLfloat leftTextureXStart, GLfloat leftTextureXStop, GLfloat leftTextureYStart, GLfloat leftTextureYStop, GLfloat rightTextureXStart, GLfloat rightTextureXStop, GLfloat rightTextureYStart,   GLfloat rightTextureYStop, GLfloat frontTextureXStart, GLfloat frontTextureXStop, GLfloat frontTextureYStart, GLfloat frontTextureYStop, GLfloat backTextureXStart, GLfloat backTextureXStop, GLfloat backTextureYStart, GLfloat backTextureYStop, GLfloat topTextureXStart, GLfloat topTextureXStop, GLfloat topTextureYStart, GLfloat topTextureYStop, GLfloat bottomTextureXStart, GLfloat bottomTextureXStop, GLfloat bottomTextureYStart, GLfloat bottomTextureYStop) {
 
     // Initialize vector for base vertices
-    std::vector<GLfloat> squareVerts;
+    std::vector(GLfloat) squareVerts;
 
     // Top Square
         // Top left Vertex
@@ -368,7 +368,7 @@ std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
 
 
   
-void addVertex(std::vector<GLfloat>& squareVerts, GLfloat x, GLfloat y, GLfloat z, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat tx, GLfloat ty) {
+void addVertex(std::vector(GLfloat)& squareVerts, GLfloat x, GLfloat y, GLfloat z, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat tx, GLfloat ty) {
     squareVerts.push_back(x);
     squareVerts.push_back(y);
     squareVerts.push_back(z);
@@ -379,7 +379,7 @@ void addVertex(std::vector<GLfloat>& squareVerts, GLfloat x, GLfloat y, GLfloat 
     squareVerts.push_back(ty);
 }
 
-std::vector<GLfloat> buildCubeBases(const CubeDimensions& dim,
+std::vector(GLfloat) buildCubeBases(const CubeDimensions& dim,
     const TextureCoords& leftTex,
     const TextureCoords& rightTex,
     const TextureCoords& frontTex,
@@ -387,7 +387,7 @@ std::vector<GLfloat> buildCubeBases(const CubeDimensions& dim,
     const TextureCoords& topTex,
     const TextureCoords& bottomTex) {
 
-    std::vector<GLfloat> squareVerts;
+    std::vector(GLfloat) squareVerts;
 
     // Top Square
     addVertex(squareVerts, dim.x - dim.width / 2, dim.y + dim.length / 2, dim.z + dim.height / 2, 0.0, 1.0, 0.0, topTex.xStart, topTex.yStop);
