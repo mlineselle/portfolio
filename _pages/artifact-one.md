@@ -100,7 +100,7 @@ I added utilization of wifi chip, and sending data to an https server to store f
 
 <details>
 <summary>Click to expand!</summary>
-<pre style="width: 2000px; font-size: 9px; margin: 0 auto; overflow-x: auto;">
+<pre style="width: 2000px; font-size: 12px; margin: 0 auto; overflow-x: auto;">
 <code>
 /* Function to Initialize the on Board wifi to connect to the data webpage */
 void initWiFi() {
