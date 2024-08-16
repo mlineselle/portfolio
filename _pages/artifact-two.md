@@ -366,7 +366,7 @@ std::vector<GLfloat> buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
 
 #### Enhanced Code
 
-<pre style="font-size: 9px;"><code>  
+
   
 void addVertex(std::vector<GLfloat>& squareVerts, GLfloat x, GLfloat y, GLfloat z, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat tx, GLfloat ty) {
     squareVerts.push_back(x);
@@ -427,7 +427,7 @@ std::vector<GLfloat> buildCubeBases(const CubeDimensions& dim,
 
     return squareVerts;
 }
-</code></pre>
+
 
 ### Narrative for Artifact Two
 This artifact is a rendered 3D scene written in C++ with OpenGL. I wrote a file that does all the work for creating vertices and then rendering them into a 3D space. This scene includes objects of various shapes and sizes as well as individually textured and the scene has lighting. This artifact displays my ability to understand the functionality behind modern technology and that I can learn new skills and languages quickly. OpenGL has many higher level languages and programs that never make you go into such detail for rendering. This shows that I have a grasp at languages at their base forms, meaning I should be able to use that knowledge and create more efficient code. There are many algorithms that were used for creating the vertices of all the objects in the scene and mapping the textures and dealing with lighting. 
