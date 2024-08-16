@@ -8,7 +8,7 @@
 ### Original Code
 Included a simple main function that used timers to trigger different functions and tasks while the thermostat program was working.
 
-<pre style="width: 75%; overflow-x: auto;">
+<pre style="width: 600px; overflow-x: auto;">
 <code>
 void *mainThread(void *arg0)
 {
