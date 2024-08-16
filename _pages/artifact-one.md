@@ -2,6 +2,7 @@
   permalink: /artifact-one/
   title: "Artifact One - TI Board Thermometer"
   layout: single
+  toc: true
 ---
 
 ### Original Code
