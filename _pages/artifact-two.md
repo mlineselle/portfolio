@@ -17,7 +17,7 @@ One of the big changes was cleaning up the original buildCubeBases function and 
 
 <details>
 <summary>Click to expand!</summary>
-<pre style="font-size: 9px; width: 2000px; overflow-x: auto;">
+<pre style="font-size: 9px; width: 2000px; margin: 0 auto; overflow-x: auto;">
 <code>  
 // Build Cube Bases
 std::vector(GLfloat) buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat height, GLfloat width, GLfloat length, GLfloat leftTextureXStart, GLfloat leftTextureXStop, GLfloat leftTextureYStart, GLfloat leftTextureYStop, GLfloat rightTextureXStart, GLfloat rightTextureXStop, GLfloat rightTextureYStart,   GLfloat rightTextureYStop, GLfloat frontTextureXStart, GLfloat frontTextureXStop, GLfloat frontTextureYStart, GLfloat frontTextureYStop, GLfloat backTextureXStart, GLfloat backTextureXStop, GLfloat backTextureYStart, GLfloat backTextureYStop, GLfloat topTextureXStart, GLfloat topTextureXStop, GLfloat topTextureYStart, GLfloat topTextureYStop, GLfloat bottomTextureXStart, GLfloat bottomTextureXStop, GLfloat bottomTextureYStart, GLfloat bottomTextureYStop) {
@@ -372,7 +372,7 @@ std::vector(GLfloat) buildCubeBases(GLfloat x, GLfloat y, GLfloat z, GLfloat hei
 
 <details>
 <summary>Click to expand!</summary>
-<pre style="font-size: 9px; width: 2000px; overflow-x: auto;">
+<pre style="font-size: 9px; width: 2000px; margin: 0 auto; overflow-x: auto;">
 <code>  
   
 void addVertex(std::vector(GLfloat)& squareVerts, GLfloat x, GLfloat y, GLfloat z, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat tx, GLfloat ty) {
