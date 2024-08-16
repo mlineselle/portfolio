@@ -2,6 +2,7 @@
 permalink: /artifact-three/
 title: "Artifact Three - Dog Shelter Website and Database"
 layout: single
+toc: true
 ---
 
 ### Original Artifact Three Dog Shelter Website Video
