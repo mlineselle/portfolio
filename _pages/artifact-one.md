@@ -8,7 +8,8 @@
 ### Original Code
 Included a simple main function that used timers to trigger different functions and tasks while the thermostat program was working.
 
-```
+<pre style="width: 75%; overflow-x: auto;">
+<code>
 void *mainThread(void *arg0)
 {
     /* Call driver init functions */
@@ -88,7 +89,8 @@ void *mainThread(void *arg0)
 
     return (NULL);
 }
-```
+</code>
+</pre>
 
 ### Enhanced Code
 I added utilization of wifi chip, and sending data to an https server to store for later. As well as simple PID structure to enhance reliability
